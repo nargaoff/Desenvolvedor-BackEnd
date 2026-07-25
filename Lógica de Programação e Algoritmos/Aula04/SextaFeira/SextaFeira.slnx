@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="SextaFeira/SextaFeira.csproj" />
+  <Project Path="Tarefas/Tarefas.csproj" />
+  <Project Path="Telas/Telas.csproj" />
+  <Project Path="Tempo/Tempo.csproj" />
+  <Project Path="Tempo2/Tempo2.csproj" />
+  <Project Path="Teste/Teste.csproj" />
+  <Project Path="WinFormsApp1/WinFormsApp1.csproj" />
+</Solution>
