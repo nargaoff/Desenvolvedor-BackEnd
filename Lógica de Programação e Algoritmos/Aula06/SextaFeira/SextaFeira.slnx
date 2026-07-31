@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="lanchonete/lanchonete.csproj" />
+  <Project Path="ParOuImpar/ParOuImpar.csproj" />
+  <Project Path="ParqueDeDiversoes/ParqueDeDiversoes.csproj" />
+  <Project Path="Tabuada/Tabuada.csproj" />
+</Solution>
