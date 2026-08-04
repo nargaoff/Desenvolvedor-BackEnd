@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Atividade4/Atividade4.csproj" />
+  <Project Path="colecao/colecao.csproj" />
   <Project Path="Combustivel/Combustivel.csproj" />
   <Project Path="Divisao/Divisao.csproj" />
   <Project Path="Impares/Impares.csproj" />
