@@ -1,0 +1,23 @@
+﻿using Estoque;
+
+//Declaração de variaveis
+string nome;
+int qtd;
+double preco;
+
+//Entrada de dados
+Console.WriteLine("Digite o nome do produto: ");
+nome = Console.ReadLine();
+
+Console.WriteLine("Digite a quantidade: ");
+qtd = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Digite o preço do produto: R$ ");
+preco = double.Parse(Console.ReadLine());
+
+Produto objeto = new Produto(nome,qtd,preco);
+Produto objeto2 = new Produto(nome, preco);
+
+Console.WriteLine();
+Console.ReadKey();
+
