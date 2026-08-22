@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Banco.Classes.Entidade.Conta">
-    <Position X="5" Y="1.25" Width="1.5" />
+  <Class Name="Banco.Classes.Entidade.Conta" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACACAAACAEAAAAAAAAAAAAAAAAAAAAEAAEAAAAGAAA=</HashCode>
       <FileName>Classes\Entidade\Conta.cs</FileName>
@@ -9,25 +9,18 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Banco.Classes.Entidade.ContaEmpresa">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="5.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAEAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAA=</HashCode>
       <FileName>Classes\Entidade\ContaEmpresa.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Banco.Classes.Entidade.ContaPoupanca">
-    <Position X="7.25" Y="3.5" Width="1.5" />
+    <Position X="3.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAIAAAIAAAAAAAABAAAAA=</HashCode>
       <FileName>Classes\Entidade\ContaPoupanca.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Banco.Interfaces.IOperacoes">
-    <Position X="3.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IOperacoes.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

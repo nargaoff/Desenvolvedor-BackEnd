@@ -1,7 +1,7 @@
-﻿using System.ComponentModel;
+﻿using Banco.Classes.Entidade;
 
-bool sair = true;
-while (sair != false)
+bool sair = false;
+while (!sair)
 {
 
     Console.WriteLine("Selecione qual tipo de conta deseja abrir: \n +" +
@@ -17,30 +17,48 @@ while (sair != false)
             break;
         case 2:
             Console.WriteLine("Selecionado conta poupança");
+
+            Console.Write("Numero da conta: ");
+            int numero = int.Parse(Console.ReadLine());
+            Console.Write("Titular da conta: ");
+            string titular = Console.ReadLine();
+            Console.Write("Taxa de juros:");
+            double taxa = double.Parse(Console.ReadLine());
+            ContaPoupanca conta = new ContaPoupanca(numero, titular, taxa);
+            Console.WriteLine("Deseja faze deposito inicial ? (s/n)");
+            char op = char.Parse(Console.ReadLine().ToLower());
+            if (op == 'n')
+            {
+
+            }
             break;
         case 3:
             Console.WriteLine("Selecionado conta empresa");
             break;
         case 4:
-            sair = false;
+            sair = true;
             break;
         default:
             Console.WriteLine("selecionado nenhuma opção, tente novamente");
             break;
-    }
-}
+            
+            Console.Write("Numero da conta: ");
+            int numero = int.Parse(Console.ReadLine());
+            Console.Write("Titular da conta: ");
+            string titular = Console.ReadLine();
+            Console.Write("Taxa de juros: ");
+            double taxa = double.Parse(Console.ReadLine());
+            ContaPoupanca conta = new ContaPoupanca(numero, titular, taxa);
 
-void Opcao1()
-{
-    Console.WriteLine("Deseja fazer deposito inicial ? (s/n)");
-    char op = char.Parse(Console.ReadLine().ToLower());
-    if (op == 'n')
-    {
 
-    }
-    else
-    {
-        Console.WriteLine("Qual valor do deposito inicial ? ");
-        
+            Console.WriteLine("Deseja fazer deposito inicial ? (s/n)");
+            char op = char.Parse(Console.ReadLine().ToLower());
+            if (op == 'n')
+            {
+                Console.Write("Qual valor do deposito inicial? ");
+                double valor = double.Parse(Console.ReadLine());
+
+                conta.Deposito(valor);
+            }
     }
 }

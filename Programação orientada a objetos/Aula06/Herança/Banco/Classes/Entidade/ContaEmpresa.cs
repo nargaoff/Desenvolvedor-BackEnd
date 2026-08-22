@@ -1,7 +1,7 @@
 ﻿
 namespace Banco.Classes.Entidade
 {
-    internal class ContaEmpresa : Conta
+    internal sealed class ContaEmpresa : Conta
     {
 		//Campos
 		private double limite;
@@ -24,22 +24,19 @@ namespace Banco.Classes.Entidade
             LimiteDeEmprestimo = limite;
         }
 
-        //Metodos
-        public override string ToString()
-        {
-            return $"Dados da conta:\n +" +
-                $"\tTitular: {TitularDaConta}\n" +
-                $"\tNumero: {NumeroDaConta}\n" +
-                $"\tSaldo: {SaldoDaConta:c}\n" +
-                $"\tLimite: {LimiteDeEmprestimo:c}\n";
-        }
-
+        //Emprestimo
         public void Emprestimo(double quantia)
         {
-            LimiteDeEmprestimo -= quantia;
-            SaldoDaConta += quantia;
+            if (quantia <= LimiteDeEmprestimo)
+            {
+                SaldoDaConta += quantia;
+            }
+            else
+            {
+                Console.WriteLine("Valor do emprestimo ultrapassa o limite.");
+            }
         }
-
+        
 
 
 	}

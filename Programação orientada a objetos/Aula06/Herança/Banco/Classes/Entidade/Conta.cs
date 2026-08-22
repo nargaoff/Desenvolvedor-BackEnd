@@ -42,17 +42,21 @@ namespace Banco.Classes.Entidade
 			TitularDaConta = titularDaConta;
 			SaldoDaConta = 0;
 		}
-		public Conta(int numeroDaConta, string titularDaConta, double saldoDaConta) : this(numeroDaConta, titularDaConta)
+		public Conta(int numeroDaConta, string titularDaConta, double saldoDaConta)
         {
-            SaldoDaConta = saldoDaConta;
+            NumeroDaConta = numeroDaConta;
+			TitularDaConta = titularDaConta;
+			SaldoDaConta = saldoDaConta;
         }
 
-        public virtual void Saque(double quantia)
+        //Saque
+		public virtual void Saque(double quantia)
         {
-            SaldoDaConta -= quantia;
+            SaldoDaConta -= quantia + 5.00;
         }
 
-        public void Deposito(double quantia)
+        //Deposito
+		public void Deposito(double quantia)
         {
             SaldoDaConta += quantia;
         }

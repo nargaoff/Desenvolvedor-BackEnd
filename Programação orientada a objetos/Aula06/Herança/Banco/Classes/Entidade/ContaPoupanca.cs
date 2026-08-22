@@ -26,8 +26,13 @@
         //Metodos
         public override void Saque(double quantia)
         {
-            SaldoDaConta -= quantia + (quantia * TaxaDeJuros);
+            SaldoDaConta -= quantia;
         }
 
+        //Atualização do saldo
+        public void AtualizacaoDeSaldo()
+        {
+            SaldoDaConta += SaldoDaConta * TaxaDeJuros;
+        }
 	}
 }
