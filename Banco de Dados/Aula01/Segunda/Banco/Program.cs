@@ -120,6 +120,11 @@ void ConsultaConta(ContaContext conta)
                 break;
             case 3:
                 //Operação alterar o titular da conta
+                Console.Write("Digie um novo titular da conta: ");
+                string novoTitular = Console.ReadLine();
+                contaConsultada.TitularDaConta = novoTitular;
+                conta.SaveChanges();
+                contaConsultada.ExibirDados();
                 break;
             case 4:
                 //Sair
