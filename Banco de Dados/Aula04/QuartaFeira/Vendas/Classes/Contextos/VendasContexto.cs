@@ -19,13 +19,18 @@ namespace Vendas.Classes.Contextos
         {
             modeloDeConstrucao.Entity<Vendas1>(entidade =>
             {
-                entidade.HasKey(e => e.Id);
-                entidade.Property(e => e.DataCompra).IsRequired();
-                entidade.Property(e => e.Tipo).IsRequired();
-                entidade.Property(e => e.Marca).IsRequired();
+                entidade.ToTable("VendasMarket");
+                entidade.Property(e => e.Id);
+                entidade.Property(e => e.DataCompra);
+                entidade.Property(e => e.Tipo);
+                entidade.Property(e => e.Marca);
                 entidade.Property(e => e.Faturamento);
                 entidade.Property(e => e.Lucro);
             });
         }
+
+
+
+
     }
 }
