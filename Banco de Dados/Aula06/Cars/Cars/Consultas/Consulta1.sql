@@ -2,8 +2,11 @@ SET XACT_ABORT ON;
 BEGIN TRANSACTION;
 
 DECLARE @basePathMoto NVARCHAR(400) =
-N'C:\Users\Back\Documents\DevBackEnd\BancoDeDados\Aula06\Cars\Cars\Fotos\Motos\';
-DECLARE @basePathCarro NVARCHAR(400) = N'C:\Users\Back\Documents\DevBackEnd\BancoDeDados\Aula06\Cars\Cars\Fotos\Carros\';
+N'C:\Users\Back\Documents\DevBackEnd\Banco de Dados\Aula06\Cars\Cars\Fotos\Motos\';
+DECLARE @basePathCarro NVARCHAR(400) = N'C:\Users\Back\Documents\DevBackEnd\Banco de Dados\Aula06\Cars\Cars\Fotos\Carros\';
+
+--C:\Users\Back\Documents\DevBackEnd\Banco de Dados\Aula06\Cars\Cars\Fotos\Motos\Moto1.jpg
+-- C:\Users\Back\Documents\DevBackEnd\Banco de Dados\Aula06\Cars\Cars\Fotos\Carros\Carro1.jpg
 
 ;WITH Sequencia AS (
    SELECT

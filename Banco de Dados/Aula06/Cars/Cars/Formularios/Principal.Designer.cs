@@ -50,6 +50,8 @@
             button3 = new Button();
             checkBox1 = new CheckBox();
             checkBox2 = new CheckBox();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -117,6 +119,7 @@
             panel1.BackColor = SystemColors.HotTrack;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Zoom;
+            panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(numericUpDown1);
             panel1.Controls.Add(button5);
@@ -141,6 +144,7 @@
             pictureBox1.Location = new Point(434, 55);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(181, 165);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
@@ -274,6 +278,7 @@
             button3.Text = "Fechar compra";
             button3.TextAlign = ContentAlignment.MiddleRight;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // checkBox1
             // 
@@ -295,6 +300,22 @@
             checkBox2.Text = "Carro";
             checkBox2.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(100, 395);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 19;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(667, 176);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 10;
+            // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -303,6 +324,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox2);
             Controls.Add(checkBox2);
             Controls.Add(checkBox1);
             Controls.Add(panel1);
@@ -348,5 +370,7 @@
         private PictureBox pictureBox1;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
     }
 }
