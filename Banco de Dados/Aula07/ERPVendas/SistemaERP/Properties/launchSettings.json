@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SistemaERP": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "string_de_conexao": "Host = dpg-daoqgcmk1f9s738c5h7g-a.oregon-postgres.render.com;Port= 5432;Database = dbdevback_3794;Username = dbdevback_3794_user;Password= kcDH0OzofTvHOiba6hm2AP2dB4VKuL1N;SSL Mode = Require;Trust Server Certificate=true;"
+      }
+    }
+  }
+}
