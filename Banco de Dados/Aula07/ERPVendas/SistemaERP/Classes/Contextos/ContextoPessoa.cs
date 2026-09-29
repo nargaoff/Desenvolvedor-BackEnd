@@ -18,7 +18,7 @@ namespace SistemaERP.Classes.Contextos
         protected override void OnConfiguring(DbContextOptionsBuilder opcoesDeConstrucao)
         {
             
-            string string_de_conexao = Environment.GetEnvironmentVariable("string_de_conexao")?.Trim('"'); ;
+            string string_de_conexao = Environment.GetEnvironmentVariable("string_de_conexao")?.Trim('"');
 
             opcoesDeConstrucao.UseNpgsql(string_de_conexao);
         }
