@@ -30,22 +30,23 @@
         {
             menuStrip1 = new MenuStrip();
             sistemaToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
+            sairToolStripMenuItem = new ToolStripMenuItem();
             perfilToolStripMenuItem = new ToolStripMenuItem();
             vendasToolStripMenuItem = new ToolStripMenuItem();
             consultaDePedidosDeVendasToolStripMenuItem = new ToolStripMenuItem();
             aprovaçãoDePedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
             relátorioDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            editarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
+            criarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
             usuáriosToolStripMenuItem = new ToolStripMenuItem();
             aprovaçãoDeUsuáriosToolStripMenuItem = new ToolStripMenuItem();
             editarUsuárioToolStripMenuItem = new ToolStripMenuItem();
             consultarUsuárioToolStripMenuItem = new ToolStripMenuItem();
-            editarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
-            criarPedidoDeVendasToolStripMenuItem = new ToolStripMenuItem();
             criarUsuáioToolStripMenuItem = new ToolStripMenuItem();
             excluirUsuárioToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -66,22 +67,22 @@
             sistemaToolStripMenuItem.Size = new Size(60, 20);
             sistemaToolStripMenuItem.Text = "Sistema";
             // 
-            // sairToolStripMenuItem
-            // 
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(180, 22);
-            sairToolStripMenuItem.Text = "Sair";
-            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
-            // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(177, 6);
+            toolStripSeparator1.Size = new Size(98, 6);
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(101, 22);
+            sairToolStripMenuItem.Text = "Sair";
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
             // perfilToolStripMenuItem
             // 
             perfilToolStripMenuItem.Name = "perfilToolStripMenuItem";
-            perfilToolStripMenuItem.Size = new Size(180, 22);
+            perfilToolStripMenuItem.Size = new Size(101, 22);
             perfilToolStripMenuItem.Text = "Perfil";
             // 
             // vendasToolStripMenuItem
@@ -108,6 +109,19 @@
             relátorioDeVendasToolStripMenuItem.Name = "relátorioDeVendasToolStripMenuItem";
             relátorioDeVendasToolStripMenuItem.Size = new Size(243, 22);
             relátorioDeVendasToolStripMenuItem.Text = "Relátorio de vendas";
+            relátorioDeVendasToolStripMenuItem.Click += relátorioDeVendasToolStripMenuItem_Click;
+            // 
+            // editarPedidoDeVendasToolStripMenuItem
+            // 
+            editarPedidoDeVendasToolStripMenuItem.Name = "editarPedidoDeVendasToolStripMenuItem";
+            editarPedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            editarPedidoDeVendasToolStripMenuItem.Text = "Editar pedido de vendas";
+            // 
+            // criarPedidoDeVendasToolStripMenuItem
+            // 
+            criarPedidoDeVendasToolStripMenuItem.Name = "criarPedidoDeVendasToolStripMenuItem";
+            criarPedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
+            criarPedidoDeVendasToolStripMenuItem.Text = "Criar pedido de vendas";
             // 
             // usuáriosToolStripMenuItem
             // 
@@ -134,18 +148,6 @@
             consultarUsuárioToolStripMenuItem.Size = new Size(194, 22);
             consultarUsuárioToolStripMenuItem.Text = "Consultar Usuário";
             // 
-            // editarPedidoDeVendasToolStripMenuItem
-            // 
-            editarPedidoDeVendasToolStripMenuItem.Name = "editarPedidoDeVendasToolStripMenuItem";
-            editarPedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
-            editarPedidoDeVendasToolStripMenuItem.Text = "Editar pedido de vendas";
-            // 
-            // criarPedidoDeVendasToolStripMenuItem
-            // 
-            criarPedidoDeVendasToolStripMenuItem.Name = "criarPedidoDeVendasToolStripMenuItem";
-            criarPedidoDeVendasToolStripMenuItem.Size = new Size(243, 22);
-            criarPedidoDeVendasToolStripMenuItem.Text = "Criar pedido de vendas";
-            // 
             // criarUsuáioToolStripMenuItem
             // 
             criarUsuáioToolStripMenuItem.Name = "criarUsuáioToolStripMenuItem";
@@ -165,6 +167,14 @@
             pictureBox1.Size = new Size(644, 313);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // reportViewer1
+            // 
+            reportViewer1.Location = new Point(0, 0);
+            reportViewer1.Name = "ReportViewer";
+            reportViewer1.ServerReport.BearerToken = null;
+            reportViewer1.Size = new Size(396, 246);
+            reportViewer1.TabIndex = 0;
             // 
             // ERP
             // 
@@ -204,5 +214,6 @@
         private ToolStripMenuItem criarUsuáioToolStripMenuItem;
         private ToolStripMenuItem excluirUsuárioToolStripMenuItem;
         private PictureBox pictureBox1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
