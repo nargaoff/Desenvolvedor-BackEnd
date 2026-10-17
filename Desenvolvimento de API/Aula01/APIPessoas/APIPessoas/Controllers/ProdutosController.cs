@@ -1,0 +1,87 @@
+﻿using APIPessoas.Models.Contextos;
+using APIPessoas.Models.Entidades;
+using APIPessoas.Repositorios;
+using Microsoft.AspNetCore.Mvc;
+
+namespace APIPessoas.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class ProdutosController : Controller
+    {
+        RepositorioProdutos rep = new RepositorioProdutos();
+
+        [HttpGet("ListarProdutos")]
+        public IActionResult ListarProdutos()
+        {
+            var lista = rep.ListaProdutos();
+            return Ok(lista);
+        }
+
+        [HttpGet("PesquisarProdutosID/{valorID}")]
+        public IActionResult PesquisarProdutosID(int valorID)
+        {
+            try
+            {
+
+                var valor = rep.PesquisarProdutosID(valorID);
+                if (valor != null)
+                {
+                    return Ok("Encontrou o dado" + valor);
+                }
+                else
+                {
+                    return NotFound("Valor não encontrado");
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest("Valor informado incorreto, por favor pesquise somente numeros inteiros");
+            }
+
+        }
+
+        [HttpPost("CriarProdutos")]
+        public IActionResult CriarProduto([FromBody] Produtos produto)
+        {
+            try
+            {
+                rep.CriarProduto(produto);
+                return Ok("Produto criado com sucesso");
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+
+            }
+        }
+        [HttpPut("EditarProduto/{id}")]
+
+        public IActionResult EditarProduto(int id, [FromBody] Produtos produto)
+        {
+            try
+            {
+                Produtos p = rep.PesquisarProdutosID(id);
+                if (p == null)
+                {
+                   return NotFound("Produto não encontrado");
+                }
+                else
+                {
+                    p.Nome = produto.Nome;
+                    p.Preco = produto.Preco;
+                    p.Descricao = produto.Descricao;
+                    p.Quantidade = produto.Quantidade;
+                    ProdutosContexto contexto = new ProdutosContexto();
+                    contexto.SaveChanges();
+                    return Ok("Produto editado com sucesso");
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+    }
+}
