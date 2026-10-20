@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{URL}}/Contas"
+method: POST
+body:
+  type: json
+  content: "{\r\n    \"value\" : \"Texto\"\r\n}"
+order: 2000
