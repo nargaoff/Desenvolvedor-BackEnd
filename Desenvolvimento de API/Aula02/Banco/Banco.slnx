@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Banco/Banco.csproj" />
+  <Project Path="WinFormsApp1/WinFormsApp1.csproj" Id="0369aa2f-10fd-4e0f-85e5-2ad4801d57c2" />
 </Solution>
