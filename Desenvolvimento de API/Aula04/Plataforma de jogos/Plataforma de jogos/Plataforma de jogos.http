@@ -1,0 +1,6 @@
+@Plataforma_de_jogos_HostAddress = http://localhost:5213
+
+GET {{Plataforma_de_jogos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
