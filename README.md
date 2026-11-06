@@ -7,3 +7,92 @@ de competências que permitem projetar, desenvolver e manter sistemas e aplicati
 ##😎 Autor 😎
 **nargaoff**
 GitHub:[@nargaoff](https://github.com/nargaoff)
+
+## Carga Horaria do curso -> 160 horas 
+
+## 😶‍🌫️ Sobre este repositório 😶‍🌫️
+
+Este repositório reúne exercícios e projetos práticos organizados por módulos de estudo, com foco em:
+
+- Lógica de programação e algorítimos
+- Programação orientada a objetos
+- Banco de dados utilizando a técnica ORM
+- Desenvolvimento de API's
+
+## ⌨️ Tecnologias utilizadas ⌨️
+
+- **CSharp** (principal)
+- **SQL**
+
+## Projetos por módulo 
+### Lógica de programação e algoritimos
+
+Módulo de estudos de algoritmos elaborados em CSharp com foco em lógica de programação, variáveis, constantes, operadores, coleções de dados, estruturas de controle de códigos, funções e bibliotecas.
+
+| Projeto | Status | Link |
+|---|---|---|
+|Aula01|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula01)
+|Aula02|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula02/ConsoleApp1)
+|Aula03|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula03)
+|Aula04|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula04)
+|Aula06|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/master/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula06/Lista%20de%20exercicios)
+|Aula07|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula07/Segunda%20feira)
+|Aula08|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula08/quarta)
+|Aula09|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/aula09)
+|Aula010|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20e%20Algoritmos/Aula10/UltimaAula)
+
+
+### Programação orientada a objetos
+
+Módulo com foco em estudo dos conceitos da programação orientada a objetos, um dos diversos paradigmas de programação, com definição dos pilares: 
+- encapsulamento 
+- herança
+- polimorfismo
+- abstração
+Além dos estudos das classes estáticas, enumerações, interfaces e relação de objetos.
+
+| Projeto | Status | Link |
+|---|---|---|
+|Aula01|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula01/POO)
+|Aula02|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula02)
+|Aula03|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula03/Sexta)
+|Aula04|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula04/Encapsulamento)
+|Aula05|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula05/QuartaFeira)
+|Aula06|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula06/Heran%C3%A7a)
+|Aula07|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula07/Segunda)
+|Aula08|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula08/Polimorfismo)
+|Aula09|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Programa%C3%A7%C3%A3o%20orientada%20a%20objetos/Aula09/SextaFeira)
+
+
+### Desenvolvimento de Banco de dados com a técnica ORM 
+
+Módulo com foco em desenvolvimento de aplicações que utilizam banco de dados com a técnica ORM realizando as operações CRUD :
+- CREATE -> CRIAR
+- READ -> LER
+- UPDATE -> Atualizar
+- DELETE -> Deletar
+  Com elaboração de algumas consultas (querys) SQL mas os projetos em sua maioria foram desenvolvidas com ORM -> Objeto Relacional Mapeado.
+
+| Projeto | Status | Link |
+|---|---|---|
+|Aula01|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula01/Segunda)
+|Aula02|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula02/Quarta)
+|Aula03|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula03/SextaFeira)
+|Aula04|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula04/QuartaFeira)
+|Aula05|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula05/Segunda)
+|Aula06|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula06/Cars)
+|Aula07|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Banco%20de%20Dados/Aula07/ERPVendas)
+
+
+### Desenvolvimento de API REST
+
+Módulo para desenvolvimento de API REST com operações CRUD utilizando protocolo HTTP com suporte ao aplicativo Postman para testes da PI, além da elaboração de documentação da API através do JWAGGER. Na última foi desenvolvido uma API com operações CRUD incompletas com foco em geração de TOKENS através do JWT (JSON Web Token)
+
+| Projeto | Status | Link |
+|---|---|---|
+|Aula01|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Desenvolvimento%20de%20API/Aula01/APIPessoas)
+|Aula02|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Desenvolvimento%20de%20API/Aula02/Banco)
+|Aula04|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Desenvolvimento%20de%20API/Aula04/Plataforma%20de%20jogos)
+|Aula05|✅ Concluído |.[Abrir](https://github.com/nargaoff/Desenvolvedor-BackEnd/tree/teste/Desenvolvimento%20de%20API/Aula05/UltimaAula)
+
+
